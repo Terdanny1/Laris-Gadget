@@ -6,30 +6,60 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body{
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
 .navbar {
   padding: 1rem 5%;
   background-color: #f73d93 !important;
 }
 
-.nav-icon{
-   padding: 5px; 
+.nav-icon {
+  padding: 5px;
 }
 
-.nav-link:hover{
-    color:#000 !important;
-    transition: 0.4s;
+.nav-link:hover {
+  color: #000 !important;
+  transition: 0.4s;
 }
-.login{
-    border:none;
-   margin: 5px;
-   background-color: #fff;
-   color: #16003b;
+.login {
+  border: none;
+  margin: 5px;
+  background-color: #fff;
+  color: #16003b;
   font-weight: bold;
   padding: 10px 25px;
   border-radius: 30px;
   transition: transform 0.4s;
 }
 
-.login:hover{
-    transform: scale(1.1);
+.login:hover {
+  transform: scale(1.1);
+}
+
+.hero-section{
+  background: #f7eeee;
+  width: 100%;
+  margin: auto;
+}
+
+.row {
+  padding: 7% 7%;
+  margin: 4% 4%;
+}
+
+.row .row-content{
+  margin: auto;
+  color: #16003b;
+}
+
+.title-text{
+  width: 90%;
+}
+
+.title-image{
+  width: 90%;
+  margin: 3%;
 }
