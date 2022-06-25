@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  text-decoration: none;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  padding: 1rem 5%;
+  background-color: #f73d93 !important;
+}
+
+.nav-icon{
+   padding: 5px; 
+}
+
+.nav-link:hover{
+    color:#000 !important;
+    transition: 0.4s;
+}
+.login{
+    border:none;
+   margin: 5px;
+   background-color: #fff;
+   color: #16003b;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 30px;
+  transition: transform 0.4s;
+}
+
+.login:hover{
+    transform: scale(1.1);
+}
