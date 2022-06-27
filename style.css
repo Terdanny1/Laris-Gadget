@@ -7,12 +7,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-body{
-  scroll-behavior: smooth;
-  overflow: hidden;
+body {
+  /* scroll-behavior: smooth;
+  overflow: scroll; */
+}
+
+.container-fluid {
+  padding: 0 10%;
 }
 .navbar {
-  padding: 1rem 5%;
   background-color: #f73d93 !important;
 }
 
@@ -25,13 +28,7 @@ body{
   transition: 0.4s;
 }
 .login {
-  border: none;
-  margin: 5px;
-  background-color: #fff;
   color: #16003b;
-  font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 30px;
   transition: transform 0.4s;
 }
 
@@ -39,27 +36,44 @@ body{
   transform: scale(1.1);
 }
 
-.hero-section{
-  background: #f7eeee;
-  width: 100%;
-  margin: auto;
+.hero-section {
+  background: #c4c4c4, 0.3;
 }
 
-.row {
-  padding: 7% 7%;
-  margin: 4% 4%;
-}
-
-.row .row-content{
-  margin: auto;
+.row-content {
+  padding: 10% 2%;
   color: #16003b;
 }
 
-.title-text{
-  width: 90%;
+.title-heading {
+  line-height: 1.5;
 }
 
-.title-image{
-  width: 90%;
+.title-image {
+  width: 100%;
   margin: 3%;
+}
+
+/* Promo section  */
+
+.promo {
+  background: #f73d93;
+}
+
+.promo-image{
+  width: 100%;
+}
+.discount{
+  padding-bottom: 20px;
+}
+.fa-circle-arrow-up{
+position: relative;
+top: 30%;
+left:70%;
+}
+
+@media screen and (max-width:600px){
+  .fa-circle-arrow-up{
+    top:10%;
+  }
 }
