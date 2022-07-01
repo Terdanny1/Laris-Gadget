@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  text-decoration: none;
+  text-decoration: none !important;
   margin: 0;
   list-style-type: none;
   box-sizing: border-box !important;
@@ -65,16 +65,23 @@ body {
   font-weight: 900;
 }
 
-/* Start Promo section  */
+/* colour-section-blue */
+.colour-section-blue {
+  background: #16003b;
+}
 
-.promo {
+/* colour-section-pink */
+
+.colour-section-pink {
   background: #f73d93;
 }
+
+/* Start Promo section  */
 
 .promo-image {
   width: 100%;
 }
-.discount {
+.promo {
   padding-bottom: 20px;
 }
 
@@ -123,7 +130,7 @@ body {
 @media screen and (max-width: 600px) {
   .promo-image-2 {
     /* width: 100%; */
-    /* transform: scale(1.2); */
+    /* transform: scale(1.5); */
   }
 }
 
@@ -183,7 +190,6 @@ body {
 
 footer {
   display: flex;
-  background: #16003b;
   color: #fff;
   width: 100%;
   justify-content: space-between;
@@ -192,16 +198,27 @@ footer {
 }
 
 .footer-details {
-  margin-top: 5%;
-  margin-bottom: 5%;
   width: 15%;
-  margin-left: 5%;
+  margin: 5% 0 5% 5%;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  margin-top: 20px;
+  padding: 0;
+  color: #fff;
+}
+
+footer li a {
+  color: #fff;
 }
 
 .footer-about {
   width: 40%;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin: 5% 0 5% 0;
 }
 
 .footer-about p {
@@ -210,24 +227,17 @@ footer {
 
 @media screen and (max-width: 600px) {
   .footer-details {
-    /* margin: 50px; */
-    /* flex-wrap: wrap; */
     width: 80%;
-    margin-left: 10%;
-    margin-bottom: 5%;
-    /* width: 100%; */
+    margin: 5% 10%;
   }
   .footer-about {
     width: 80%;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    margin: 5% 10%;
   }
 }
 
-
-
 .rectangle {
-  background: #0B001D;
+  background: #0b001d;
   width: 70%;
   clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0 100%);
   display: flex;
@@ -243,9 +253,6 @@ footer {
 
 .footer-text {
   font-size: smaller;
-  /* width: 60%; */
 }
 
-
 /* End footer section  */
-
