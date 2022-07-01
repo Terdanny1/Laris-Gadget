@@ -13,6 +13,14 @@ body {
   /* overflow: scroll; */
 }
 
+#Products,
+#Services,
+#About {
+  scroll-behavior: smooth;
+  overflow-y: hidden;
+  scroll-snap-type: y mandatory;
+}
+
 .container-fluid {
   padding: 0 10%;
 }
