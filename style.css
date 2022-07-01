@@ -8,8 +8,9 @@
 }
 
 body {
-  /* scroll-behavior: smooth;
-  overflow: scroll; */
+  /* background: rgba(196, 196, 196, 0.35); */
+  /* scroll-behavior: smooth; */
+  /* overflow: scroll; */
 }
 
 .container-fluid {
@@ -51,10 +52,16 @@ body {
 
 .title-image {
   width: 100%;
-  margin: 3%;
+  margin-top: 18%;
 }
 
-.tech{
+@media screen and (max-width: 600px) {
+  .title-image {
+    margin-bottom: 20%;
+  }
+}
+
+.tech {
   font-weight: 900;
 }
 
@@ -109,14 +116,14 @@ body {
 
 .promo-image-2 {
   width: 100%;
-  transform: scale(1.5);
+  /* transform: scale(1.2); */
   /* margin-bottom: 100%; */
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .promo-image-2 {
-    width: 100%;
-    transform: scale(1.2);
+    /* width: 100%; */
+    /* transform: scale(1.2); */
   }
 }
 
@@ -138,30 +145,26 @@ body {
 /* Start About section  */
 
 .about {
-
   background: #16003b !important;
 }
-/* h2 .about-text{
-    margin-top: 100px;
-  } */
+.about-text {
+  padding-top: 1em;
+}
 
+.customers {
+  background-color: #fff;
+  color: #000;
+  width: 30%;
+}
+
+@media screen and (max-width: 600px) {
   .customers {
-    background-color: #fff;
-    color: #000;
-    width: 30%;
-
+    width: 100%;
   }
-  
-  @media screen and (max-width: 600px) {
-    .customers {
-      width: 100%;
-
-    }
-  }
+}
 /* End About section  */
 
 /* Start Feature section  */
-
 
 .features {
   background: rgba(255, 182, 193, 0.35);
@@ -176,5 +179,73 @@ body {
 
 /* End Feature section  */
 
+/* Start footer section  */
 
+footer {
+  display: flex;
+  background: #16003b;
+  color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  font-size: small;
+  flex-wrap: wrap;
+}
+
+.footer-details {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 15%;
+  margin-left: 5%;
+}
+
+.footer-about {
+  width: 40%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.footer-about p {
+  width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .footer-details {
+    /* margin: 50px; */
+    /* flex-wrap: wrap; */
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    /* width: 100%; */
+  }
+  .footer-about {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+}
+
+
+
+.rectangle {
+  background: #0B001D;
+  width: 70%;
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0 100%);
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .rectangle {
+    width: 100%;
+    padding: 0 20px;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0 100%);
+  }
+}
+
+.footer-text {
+  font-size: smaller;
+  /* width: 60%; */
+}
+
+
+/* End footer section  */
 
