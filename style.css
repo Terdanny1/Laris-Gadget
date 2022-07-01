@@ -17,8 +17,6 @@ body {
 #Services,
 #About {
   scroll-behavior: smooth;
-  overflow-y: hidden;
-  scroll-snap-type: y mandatory;
 }
 
 .container-fluid {
@@ -68,6 +66,7 @@ body {
     margin-bottom: 20%;
   }
 }
+
 
 .tech {
   font-weight: 900;
