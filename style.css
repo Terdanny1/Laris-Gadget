@@ -250,6 +250,10 @@ footer li a {
   display: flex;
   align-items: center;
 }
+
+.rectangle a{
+  color: #fff;
+}
 @media screen and (max-width: 600px) {
   .rectangle {
     width: 100%;
